@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="background" src="img/background-main.webp" alt="" />
+      <!-- <button class="back">
+        <p>Back</p>
+      </button> -->
+      <div class="list-select">
+        <div class="select">
+          <label for="player_P" class="label">
+            <img
+              src="img/icon-play.png"
+              alt=""
+            />
+            <p>Player vs Player</p>
+          </label>
+          <button class="button_select" id="player_P"></button>
+        </div>
+        <div class="select">
+          <label for="player_B" class="label">
+            <img
+              src="img/icon-play.png"
+              alt=""
+            />
+            <p>Player vs Bot</p>
+          </label>
+          <button class="button_select" id="player_B"></button>
+        </div>
+        <div class="select">
+          <label for="setting" class="label">
+            <img src="img/icon-setting.png" alt="" />
+            <p>Help</p>
+          </label>
+          <button class="button_select" id="setting">setting</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(".back").click(function () {
+    window.open("", "_parent", "");
+    window.close();
+  });
+  $("#player_P").click(function () {
+    window.open("game.html", "_self");
+  });
+  $("#player_B").click(function () {
+    window.open("game.html", "_self");
+  });
+</script>
